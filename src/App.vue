@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-content>
+      <logo/>
       <router-view></router-view>
     </v-content>
   </v-app>
@@ -9,8 +10,6 @@
 <script>
 
 export default {
-  name: 'App',
-
   data () {
     return {
       //
@@ -18,3 +17,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Roboto');
+#app {
+  font-family: 'Roboto', sans-serif;
+}
+</style>

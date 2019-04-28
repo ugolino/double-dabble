@@ -1,19 +1,13 @@
 <template>
-  <v-layout my-4 row justify-space-start wrap> 
-
-    <template v-for="(group) in groups">
-      
-        <v-chip
-          v-for="(item, index) in group.items.filter(item => item.authorized)"
-          :key="index"
-          outline
-        >
-        {{item.title}}
-        </v-chip>
-      
-    </template>
-
- 
+  <v-layout my-4 row justify-space-start wrap>  
+    <v-chip
+      v-for="(item, index) in itemsByAuthorized"
+      :key="index"
+      label
+      class="px-3 py-1 body-2"
+    >
+    {{item.title}}
+    </v-chip>
   </v-layout>
 
 </template>
@@ -22,18 +16,14 @@
 
   export default {
     props: {
-      groups: Array
+      items: Array
     },
-    data() {
-      return {
-  
- 
+    computed: {
+      itemsByAuthorized(){
+        return this.items.filter(item => item.authorized)
       }
-        
     },
-    mounted() {
-      
-    }
+
  
   }
 </script>
