@@ -8358,6 +8358,11 @@ vue-lodash@^2.0.2:
   dependencies:
     lodash "^4.17.11"
 
+vue-metamask@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/vue-metamask/-/vue-metamask-1.0.10.tgz#3ee3b31006101580c8bb0fcef16eef763de860e8"
+  integrity sha512-QJ7gHiu1d226hBAh19jtOzteoQGRtqrIFbmIRLBIezAWizHlJnWLKyALYLO3gD3P1fcWcRmjyXQn6Ig405HnkA==
+
 vue-router@^3.0.3:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.6.tgz#2e4f0f9cbb0b96d0205ab2690cfe588935136ac3"

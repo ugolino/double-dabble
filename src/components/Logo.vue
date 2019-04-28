@@ -1,5 +1,5 @@
 <template>
-  <h4 class="logo teal--text text--darken-3">Double-Dabble</h4>
+  <h4 class="logo teal--text text--darken-3">DOUBLE DABBLE</h4>
 </template>
 
 <style>

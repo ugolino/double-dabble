@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <v-content>
-      <logo/>
       <router-view></router-view>
     </v-content>
   </v-app>

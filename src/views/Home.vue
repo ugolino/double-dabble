@@ -7,6 +7,12 @@
       <Step2 v-if="step === 2" :items="items" />
       <Step3 v-if="step === 3" :score="score" :shared="shared" />
     </v-container>
+    <vue-metamask 
+            userMessage="Double Dubble Demo" 
+            
+            @onComplete="onComplete"
+        >
+        </vue-metamask>
     <v-footer fixed class="pa-5" color="blue-grey lighten-3" v-if="!shared">
       <v-btn color="warning" large @click="step--" v-if="step > 1 ">
         Back
@@ -28,6 +34,7 @@
   import Step1 from '../components/Step1'
   import Step2 from '../components/Step2'
   import Step3 from '../components/Step3'
+  import VueMetamask from 'vue-metamask';
 
   export default {
     components: {
@@ -35,7 +42,8 @@
       Steps,
       Step1,
       Step2,
-      Step3
+      Step3,
+      VueMetamask
     },
     data() {
       return {
@@ -128,6 +136,9 @@
       this.calculateScore()
     },
     methods: {
+      onComplete(data){
+        console.log('data:', data);
+      },
       calculateScore(){
         if (this.score === 0) {
           this.score = Math.floor(Math.random() * (750 - 450) + 450)
