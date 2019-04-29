@@ -7,12 +7,11 @@
       <Step2 v-if="step === 2" :items="items" />
       <Step3 v-if="step === 3" :score="score" :shared="shared" />
     </v-container>
-    <vue-metamask 
-            userMessage="Double Dubble Demo" 
-            
-            @onComplete="onComplete"
-        >
-        </vue-metamask>
+      <vue-metamask 
+          userMessage="Double Dabble Demo" 
+          @onComplete="onComplete"
+      >
+      </vue-metamask>
     <v-footer fixed class="pa-5" color="blue-grey lighten-3" v-if="!shared">
       <v-btn color="warning" large @click="step--" v-if="step > 1 ">
         Back
