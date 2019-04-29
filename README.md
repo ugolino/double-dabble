@@ -1,4 +1,4 @@
-# double-dubble
+# double-dabble
 
 ## Project setup
 ```
