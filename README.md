@@ -1,5 +1,8 @@
 # double-dabble
 ![Double Dabble Logo](https://docs.google.com/uc?id=1N1rOSuOAtJfJT70GV7SLa1y9VnFNVxT-)
+
+A double opt-in protocol for credit score
+
 ## Project setup
 ```
 yarn install
