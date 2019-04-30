@@ -5,6 +5,10 @@
       :key="index"
       label
       class="px-3 py-1 body-2"
+      close
+      v-model="item.authorized"
+      color="teal"
+      outline
     >
     {{item.title}}
     </v-chip>
