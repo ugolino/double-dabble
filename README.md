@@ -1,7 +1,13 @@
 # double-dabble
 ![Double Dabble Logo](https://docs.google.com/uc?id=1N1rOSuOAtJfJT70GV7SLa1y9VnFNVxT-)
 
-A double opt-in protocol for credit score
+A decentralized double opt-in protocol for credit score
+
+## Introduction
+
+Prototype built for the Ethereal Virtual Hackathon 2019. 
+
+[Project Deck](https://docs.google.com/presentation/d/1ZwBL0IT7tERYFfPQjgDm7yi5RJ4YklKNTHMROQlUg_E/edit?usp=sharing).
 
 ## Project setup
 ```
